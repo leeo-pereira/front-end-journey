@@ -7,7 +7,6 @@
 :root {
     --bg-color: #d3d3d3;
     --font-color: #282828;
-    --hover-color: #858585;
     --hover-text: #858585;
     --hover-bg: #282828;
 }
@@ -31,7 +30,6 @@ body {
     color: var(--font-color);
     font-family:'Courier New', Courier, monospace;
     text-align: center;
-    max-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,7 +41,7 @@ body {
     align-items: center;
     gap: 1rem;
     margin: 1rem auto 2rem;
-}
+    max-width: 300px;}
 
 .header > img {
     width: 80%;
@@ -59,6 +57,7 @@ body {
 
 main {
     margin: 1rem auto;
+    max-width: 300px;
 }
 
 .list {
@@ -69,7 +68,6 @@ main {
 
 .link {
     display: block;
-    margin: 0 1rem;
     padding: 1rem;
     border-radius: 8px;
     border: 2px solid var(--font-color);
@@ -86,11 +84,12 @@ main {
 
 footer {
     margin: 2rem auto 1rem;
+    max-width: 300px;
 }
 
 @media screen and (min-width: 600px) {
 
-    body {
+    header, main, footer {
         max-width: 500px;
     }
 }
