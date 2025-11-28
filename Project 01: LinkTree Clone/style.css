@@ -93,10 +93,4 @@ footer {
     body {
         max-width: 500px;
     }
-
-    ul li a:hover {
-        -color: var(--hover-color); 
-        color: var(--bg-color); /* Manter a cor da fonte */
-        border: 2px solid var(--hover-color);
-    }
 }
