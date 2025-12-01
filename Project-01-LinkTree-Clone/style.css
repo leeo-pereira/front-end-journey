@@ -7,8 +7,15 @@
 :root {
     --bg-color: #d3d3d3;
     --font-color: #282828;
-    --hover-text: #858585;
+    --hover-text: #d3d3d3;
     --hover-bg: #282828;
+}
+
+.dark-mode {
+    --bg-color: #282828;
+    --font-color: #d3d3d3;
+    --hover-text: #282828;
+    --hover-bg: #d3d3d3;
 }
 
 html {
