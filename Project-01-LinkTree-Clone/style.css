@@ -63,21 +63,6 @@ body {
     padding: 1rem;
 }
 
-#theme-toggle {
-    border: none;
-    color: var(--font-color);
-    background-color: var(--bg-color);
-    font-family: 'Courier New', Courier, monospace;
-    text-decoration: underline;
-    cursor: pointer;
-    transition: transform .2s;
-}
-
-#theme-toggle:hover {
-    transform: scale(1.1);
-
-}
-
 main {
     margin: 1rem auto;
     width: 100%;
@@ -114,6 +99,21 @@ main {
 footer {
     margin: 2rem auto 1rem;
     max-width: 300px;
+}
+
+#theme-toggle {
+    border: none;
+    color: var(--font-color);
+    background-color: var(--bg-color);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .8rem;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.1);
 }
 
 @media screen and (min-width: 600px) {
