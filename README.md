@@ -5,6 +5,8 @@ Este repositório reúne **projetos e exercícios desenvolvidos durante meus est
 
 A ideia aqui não é criar projetos finais ou produtos completos, mas **registrar o processo de aprendizado**, documentando decisões, experimentos e aprendizados ao longo do caminho.
 
+🔗 https://leeo-pereira.github.io/front-end-journey/
+
 ---
 
 ## 🎯 Objetivo do Repositório
@@ -20,10 +22,10 @@ A ideia aqui não é criar projetos finais ou produtos completos, mas **registra
 
 Atualmente, o repositório contém:
 
-```
-/projects
-└── landing-page-study
-```
+
+- [LinkTree Clone](https://leeo-pereira.github.io/front-end-journey/link-tree/)
+- [Calculadora JavaScript](https://leeo-pereira.github.io/front-end-journey/calculadora-javascript/)
+
 
 Cada projeto é tratado como um **estudo independente**, com foco em um conjunto específico de conceitos técnicos e decisões de implementação.
 
