@@ -12,8 +12,8 @@ O funcionamento da calculadora segue o seguinte fluxo:
 - cada botão de operação (`somar`, `subtrair`, `multiplicar`, `dividiri` é selecionado no JavaScript usando `getElementById`;
 - ao clicar em um botão (`onclick`), um evento é disparado;
 - esse evento aciona uma função que:
--   lê os valores dos inputs usando `parseFloat(num1.value)` e `parseFloat(num2.value)`;
--   executa a operação correspondente ao botão clicado;
+  - lê os valores dos inputs usando `parseFloat(num1.value)` e `parseFloat(num2.value)`;
+  - executa a operação correspondente ao botão clicado;
 - o resultado da operação é então exibido em um input identificado no documento pelo seu ID.
 
 ## Reflexões sobre as limitações da calculadora
