@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário validado com JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!--
+        O botão só envia o formulário se:
+        - todos os inputs receberem conteúdo;
+        - o seletor receber alguma opção que não seja 0.
+    -->
+
+    <form id="contato" method="post" action="#">
+        <div class="label">
+            <label for="nome">Nome </label>
+            <input type="text" name="nome" id="nome">
+        </div>
+        <div class="label">
+            <label for="telefone">Telefone </label>
+            <input type="number" name="telefone" id="telefone">
+        </div>
+        <div class="label">
+            <label for="curso">Curso </label>
+            <select name="curso" id="curso">
+                <option value="0">Selecione</option>
+                <option value="1">JavaScript</option>
+                <option value="2">C#</option>
+                <option value="3">JQuery</option>
+                <option value="4">Java</option>
+                <option value="5">VB</option>
+                <option value="6">CSS3</option>
+		    </select>
+        </div>
+        <input type="button" class="button" id="enviar" value="Enviar">
+    </form>
+</body>
+</html>
