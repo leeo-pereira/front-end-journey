@@ -12,16 +12,16 @@ Se todas as respostas forem afirmativas, o formulário é enviado. Caso contrár
 
 1. O arquivo de scripts importa IDs de objetos relevantes: formulário, inputs de nome, telefone e o seletor de curso, além do botão.
 2. Uma função com `if/else` verifica as condições acessando o valor (`.value`) dos elementos obtidos via `document.getElementById`:
-  1. `=== ''` no caso dos campos de texto e número,
-  2. `=== 0` no caso do campo seletor.
+    1. `=== ''` no caso dos campos de texto e número,
+    2. `=== 0` no caso do campo seletor.
 3. Se uma condição não for respeitada, a função dispara `window.alert` com um aviso específico para:
-  1. preencher o nome,
-  2. preencher o telefone,
-  3. selecionar um curso.
+    1. preencher o nome,
+    2. preencher o telefone,
+    3. selecionar um curso.
 4. Usando `document.getElementById(id).onclick = function()`, o botão:
-  1. executa a função de verificação e, caso todas as condições sejam satisfeitas,
-  2. exibe um alerta de confirmação,
-  3. envia o formulário.
+    1. executa a função de verificação e, caso todas as condições sejam satisfeitas,
+    2. exibe um alerta de confirmação,
+    3. envia o formulário.
 
 ## Como testar
 Acesse: https://leeo-pereira.github.io/front-end-journey/formulario-validado/
