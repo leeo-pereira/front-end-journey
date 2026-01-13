@@ -1,27 +1,30 @@
 // Recebe valores dos inputs, aciona a função e exibe os resultados nos outputs.
-
 document.getElementById('calcular').onclick = function() {
     const salario1 = parseFloat(document.getElementById('salario1').value);
     const salario2 = parseFloat(document.getElementById('salario2').value);
     const despesas = parseFloat(document.getElementById('despesas').value);
 
+    // Impede campos vazios.
+    if (!salario1 || !salario2 || !despesas) {
+        alert ('Por favor, preencha todos os campos.');
+        return;
+    }
+
     const resultado = divisaoDasContas(salario1, salario2, despesas);
 
-    // Exibe resultados nos outputs, convertidos para o formato brasileiro
-    document.getElementById('resultado1').value =
-        resultado.parte1.toLocaleString('pt-BR', {
-            minimumFractionDigits: 2,
-            maximumFractionDigits: 2
-    });
-    document.getElementById('resultado2').value =
-        resultado.parte2.toLocaleString('pt-BR', {
-            minimumFractionDigits: 2,
-            maximumFractionDigits: 2
-    });
+    // Converte os valores para o real brasileiro.
+    const formatar = (valor) =>
+        valor.toLocaleString('pt-BR', {
+            style: 'currency',
+            currency: 'BRL'
+        });
+
+    // Exibe resultados nos outputs.
+    document.getElementById('resultado1').textContent = formatar(resultado.parte1);
+    document.getElementById('resultado2').textContent = formatar(resultado.parte2);
 }
 
 // Calcula divisão de contas de acordo com cada salário
-
 function divisaoDasContas(salario1, salario2, despesas) {
     var rendaTotal = salario1 + salario2;
 
