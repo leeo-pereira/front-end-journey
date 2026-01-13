@@ -1,23 +1,23 @@
+// Converte os valores para o real brasileiro.
+const formatar = (valor) =>
+    valor.toLocaleString('pt-BR', {
+        style: 'currency',
+        currency: 'BRL'
+    });
+
 // Recebe valores dos inputs, aciona a função e exibe os resultados nos outputs.
 document.getElementById('calcular').onclick = function() {
     const salario1 = parseFloat(document.getElementById('salario1').value);
     const salario2 = parseFloat(document.getElementById('salario2').value);
     const despesas = parseFloat(document.getElementById('despesas').value);
 
-    // Impede campos vazios.
-    if (!salario1 || !salario2 || !despesas) {
+    // Previne campos inválidos.
+    if (isNaN(salario1) || isNaN(salario2) || isNaN(despesas)) {
         alert ('Por favor, preencha todos os campos.');
         return;
     }
 
     const resultado = divisaoDasContas(salario1, salario2, despesas);
-
-    // Converte os valores para o real brasileiro.
-    const formatar = (valor) =>
-        valor.toLocaleString('pt-BR', {
-            style: 'currency',
-            currency: 'BRL'
-        });
 
     // Exibe resultados nos outputs.
     document.getElementById('resultado1').textContent = formatar(resultado.parte1);
