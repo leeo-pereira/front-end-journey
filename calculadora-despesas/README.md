@@ -20,4 +20,4 @@ Aplicação simples para dividir despesas mensais de forma proporcional à renda
 - Formatação de valores monetários com `toLocaleString`
 
 ## Como testar
-Acesse: 
+Acesse: https://leeo-pereira.github.io/front-end-journey/calculadora-despesas/
