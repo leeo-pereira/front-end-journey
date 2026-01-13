@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de despesas</title>
+</head>
+<body>
+    <div id="calculadora">
+        <h1>Calculadora de despesas para casais</h1>
+        <p>Recebe dois salários e as despesas do mês. Depois, calcula a contribuição de cada um de acordo com seus ganhos.</p>
+
+        <hr>
+
+        <form id="formCalculadora" class="form">
+            <div class="campos">
+                <label for="salario1">Seu salário (R$)</label><input type="number" step="0.01" id="salario1">
+            </div>
+            <div class="campos">
+                <label for="salario2">Salário parceiro(a) (R$)</label><input type="number" step="0.01" id="salario2">
+            </div>
+            <div class="campos">
+                <label for="despesas">Despesas do mês (R$)</label><input type="number" step="0.01" id="despesas">
+            </div>
+
+            <button type="button" id="calcular">Calcular divisão</button>
+            
+            <div class="resultados">
+                <div class="campos">
+                    <label for="resultado1">Sua parte (R$)</label>
+                    <output id="resultado1"></output>
+                </div>
+                <div class="campos">
+                    <label for="resultado2">Parte parceiro(a) (R$)</label>
+                    <output id="resultado2"></output>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
