@@ -20,7 +20,7 @@ A primeira versão desse app funcionava com duas funções separadas que faziam 
 2. subtrai/soma,
 3. imprime o resultado no próprio campo de texto.
 
-```
+```js
 menos = function() {
     const inputResultado = document.getElementById('resultado');
     var valor = parseInt(inputResultado.value) - 1;
