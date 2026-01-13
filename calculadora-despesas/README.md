@@ -1,6 +1,5 @@
 # Calculadora de despesas para casais
 
-## Objetivo
 Aplicação simples para dividir despesas mensais de forma proporcional à renda de cada pessoa.
 
 ## Como funciona
