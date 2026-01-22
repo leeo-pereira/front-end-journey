@@ -22,7 +22,7 @@ Aplicação simples para dividir despesas mensais de forma proporcional à renda
 - Validação básica de inputs
 
 ## Como testar
-Acesse: https://leeo-pereira.github.io/front-end-journey/calculadora-despesas/
+Acesse: https://leeo-pereira.github.io/calculadora-despesas/
 
 ## Versionamento
 
